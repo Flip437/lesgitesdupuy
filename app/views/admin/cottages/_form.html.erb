@@ -13,6 +13,9 @@
 
   <div class="actions">
     <%= form.text_field :name, placeholder: "Nom du gîte" %>
+      <%= form.fields_for :bedrooms do |doc| %>
+        <%= doc.text_field :name %>
+      <% end %>
     <%= form.submit %>
   </div>
 <% end %>
