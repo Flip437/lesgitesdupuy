@@ -1,5 +1,5 @@
 class Admin::BedroomsController < ApplicationController
-  before_action :set_admin_bedroom, only: %i[ show edit update destroy ]
+  before_action :set_admin_bedroom, only: %i[ show edit update destroy get_infos]
 
   # GET /admin/bedrooms or /admin/bedrooms.json
   def index
@@ -58,10 +58,39 @@ class Admin::BedroomsController < ApplicationController
     end
   end
 
+  def get_infos
+    puts "PARAMSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"
+    puts @admin_bedroom.errors
+    puts "PARAMSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"
+
+    
+    respond_to do |format|
+      if @admin_bedroom
+        format.html {}
+        format.json { render json: @admin_bedroom, status: :ok }
+      else
+        puts "ADMIN BEDROOM IS NILLLLLLLLLLLLLLLLLLLLLLLL"
+        format.html { render :edit, status: :unprocessable_entity }
+        format.json { render json: @admin_bedroom, status: :unprocessable_entity }
+      end
+    end
+
+
+    # respond_to do |format|
+    #   format.json { render json: {blabla: "blablabla"} }
+    # end
+
+  
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_admin_bedroom
-      @admin_bedroom = Admin::Bedroom.find(params[:id])
+      begin
+        @admin_bedroom = Admin::Bedroom.find(params[:id])
+      rescue
+        @admin_bedroom = nil
+      end
     end
 
     # Only allow a list of trusted parameters through.

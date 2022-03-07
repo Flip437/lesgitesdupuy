@@ -1,4 +1,6 @@
 class Admin::Bedroom < ApplicationRecord
   belongs_to :cottage
-  # validates_presence_of :name
+  has_many :reservations, dependent: :destroy
+  accepts_nested_attributes_for :reservations
+  validates_presence_of :name
 end

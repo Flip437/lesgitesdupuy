@@ -2,9 +2,11 @@
 
 <p><%= @admin_cottage.name %></p>
 
-<% @admin_cottage.bedrooms.each do |bedroom| %>
-  <p>__<%= bedroom.name %></p>
-<% end %>
+<ul>
+  <% @admin_cottage.bedrooms.each do |bedroom| %>
+    <li><p>__<%= bedroom.name %></p></li>
+  <% end %>
+</ul>
 
 <%= link_to 'Edit', edit_admin_cottage_path(@admin_cottage) %> |
 <%= link_to 'Back', admin_cottages_path %>

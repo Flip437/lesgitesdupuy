@@ -1,0 +1,96 @@
+<%= form_with(model: admin_reservation) do |form| %>
+  <% if admin_reservation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(admin_reservation.errors.count, "error") %> prohibited this admin_reservation from being saved:</h2>
+
+      <ul>
+        <% admin_reservation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.date_field :start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.date_field :end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :firstname %>
+    <%= form.text_field :firstname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastname %>
+    <%= form.text_field :lastname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bedroom %>
+    <%= form.object.id %>
+    <%# <%= form.select :bedroom_id, options_for_select(Admin::Bedroom.all.map{ |bedroom| [bedroom.name, bedroom.id] }, form.object.bedroom_id), {include_blank: true}, {onchange: "getInfos(this.value);"} %> 
+    <%= form.select :bedroom_id, options_for_select(Admin::Bedroom.all.map{ |bedroom| [bedroom.name, bedroom.id] }, form.object.bedroom_id), {include_blank: true} %>
+  </div>
+
+  <h1>La chambre sélectionnée est la :<span id="room_name">blabla</span></h1>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<script>
+  // window.onload = saveBedroomName();
+
+  // function saveBedroomName() {
+  //   var bedroomName = document.querySelector('#room_name').innerHTML
+  //   localStorage.setItem('bedroomName', bedroomName);
+  // }
+
+
+  var select = document.getElementById('admin_reservation_bedroom_id')
+  
+  select.addEventListener('change', function(){
+
+
+    console.log('click')
+    console.log(select.value)
+
+   
+    select.value.length === 0
+      ? document.querySelector('#room_name').innerHTML = ""
+      : fetch('http://localhost:3000/admin/bedrooms/'+select.value+'/get_infos.json')
+        .then(response => response.json())
+        .then(data => {
+            document.querySelector('#room_name').innerHTML = data.name
+          })
+        .catch(console.error);
+
+  });
+
+
+  // function getInfos(value) {
+  //   var bedroomName = localStorage.getItem('bedroomName');
+
+  //   value.length === 0
+  //     ? document.querySelector('#room_name').innerHTML = bedroomName
+  //     : fetch('http://localhost:3000/admin/bedrooms/'+value+'/get_infos.json')
+  //       .then(response => response.json())
+  //       .then(data => {
+  //           document.querySelector('#room_name').innerHTML = data.name
+  //         })
+  //       .catch(console.error);
+
+  // }
+</script>
