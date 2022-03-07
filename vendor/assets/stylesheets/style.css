@@ -716,7 +716,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-color:#f7f7f7;
 }
 .banner-area.bg-1 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/1.jpg") no-repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/1.jpg") no-repeat scroll center center / cover ;
 }
 .banner-area.bg-2 {
 	background: rgba(0, 0, 0, 0) url("assets/images/banners/2.jpg") repeat scroll center center / cover ;
