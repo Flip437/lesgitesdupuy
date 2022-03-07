@@ -719,13 +719,13 @@ h1, h2, h3, h4, h5, h6 {
 	background: rgba(0, 0, 0, 0) url("banners/1.jpg") no-repeat scroll center center / cover ;
 }
 .banner-area.bg-2 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/2.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/2.jpg") repeat scroll center center / cover ;
 }
 .banner-area.bg-3 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/3.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/3.jpg") repeat scroll center center / cover ;
 }
 .banner-area.bg-4 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/6.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/6.jpg") repeat scroll center center / cover ;
 }
 .banner-text {
 	position:relative;
@@ -787,28 +787,28 @@ h1, h2, h3, h4, h5, h6 {
 /*----------------------------------------*/
 .page-banner {}
 .page-banner-area.bg-1 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/page-banner-4.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/page-banner-4.jpg") repeat scroll center center / cover ;
 }
 .page-banner-area.bg-2 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/page-banner-1.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/page-banner-1.jpg") repeat scroll center center / cover ;
 }
 .page-banner-area.bg-3 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/page-banner-2.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/page-banner-2.jpg") repeat scroll center center / cover ;
 }
 .page-banner-area.bg-4 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/page-banner-3.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/page-banner-3.jpg") repeat scroll center center / cover ;
 }
 .page-banner-area.bg-5 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/page-banner-6.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/page-banner-6.jpg") repeat scroll center center / cover ;
 }
 .page-banner-area.bg-6 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/page-banner-5.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/page-banner-5.jpg") repeat scroll center center / cover ;
 }
 .page-banner-area.bg-7 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/page-banner-8.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/page-banner-8.jpg") repeat scroll center center / cover ;
 }
 .page-banner-area.bg-8 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/page-banner-7.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/page-banner-7.jpg") repeat scroll center center / cover ;
 }
 .page-banner-text {
 	position:relative;
@@ -822,10 +822,10 @@ h1, h2, h3, h4, h5, h6 {
 /*  6.  Slider Area
 /*----------------------------------------*/
 .single-slide.bg-1 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/4.jpg") no-repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/4.jpg") no-repeat scroll center center / cover ;
 }
 .single-slide.bg-2 {
-	background: rgba(0, 0, 0, 0) url("assets/images/banners/5.jpg") no-repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("banners/5.jpg") no-repeat scroll center center / cover ;
 }
 .slider-items.arrow-none .slick-dots {
 	bottom:30px;
@@ -983,7 +983,7 @@ h1, h2, h3, h4, h5, h6 {
 /*  9. Contact Area
 /*----------------------------------------*/
 .contact-area.bg-1 {
-	background: rgba(0, 0, 0, 0) url("assets/images/bg/contact-bg.jpg") repeat scroll center center / cover;
+	background: rgba(0, 0, 0, 0) url("bg/contact-bg.jpg") repeat scroll center center / cover;
 }
 .contact-form input, .contact-form select, .contact-form textarea {
   width: 100%;
@@ -1026,7 +1026,7 @@ h1, h2, h3, h4, h5, h6 {
 /*  9.1  Contact Form 2
 /*----------------------------------------*/
 .contact-form.style-2 {
-	background: rgba(0, 0, 0, 0) url("assets/images/bg/contact-2.jpg") repeat scroll center center / cover;
+	background: rgba(0, 0, 0, 0) url("bg/contact-2.jpg") repeat scroll center center / cover;
 	padding: 52px 90px 60px 90px;
 }
 .contact-form.style-2 form {
@@ -1168,7 +1168,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height:48px;
 }
 .cta-area.bg-2 {
-	background: rgba(0, 0, 0, 0) url("assets/images/bg/cta.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("bg/cta.jpg") repeat scroll center center / cover ;
 	padding:93px 0 100px 0;
 }
 .cta-text.style-2 p {
@@ -1501,13 +1501,13 @@ ul.blog-meta {
 	padding:0;
 }
 .testimonial-area.bg-1 {
-	background: rgba(0, 0, 0, 0) url("assets/images/bg/testimonial.jpg") repeat scroll center center / cover;
+	background: rgba(0, 0, 0, 0) url("bg/testimonial.jpg") repeat scroll center center / cover;
 }
 .testimonial-area.bg-2 {
-	background: rgba(0, 0, 0, 0) url("assets/images/bg/testimonial-2.jpg") repeat scroll center center / cover;
+	background: rgba(0, 0, 0, 0) url("bg/testimonial-2.jpg") repeat scroll center center / cover;
 }
 .testimonial-area.bg-3 {
-	background: rgba(0, 0, 0, 0) url("assets/images/bg/testimonial-3.jpg") repeat scroll center center / cover;
+	background: rgba(0, 0, 0, 0) url("bg/testimonial-3.jpg") repeat scroll center center / cover;
 	padding: 85px 0 120px 0;
 }
 .testimonial-area.bg-3.overlay::before {
@@ -1730,10 +1730,10 @@ ul.blog-meta {
 	padding-top:194px;
 }
 .ad-banner-sin.bg-1 {
-	background: rgba(0, 0, 0, 0) url("assets/images/ad/1.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("ad/1.jpg") repeat scroll center center / cover ;
 }
 .ad-banner-sin.bg-2 {
-	background: rgba(0, 0, 0, 0) url("assets/images/ad/2.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("ad/2.jpg") repeat scroll center center / cover ;
 }
 .ad-banner-inner {
 	position:relative;
@@ -1759,7 +1759,7 @@ ul.blog-meta {
 /*  22.  CounterUp Area
 /*----------------------------------------*/
 .counterUp-area {
-	background:url("assets/images/bg/counterup.jpg");
+	background:url("bg/counterup.jpg");
 	background-size:contain;
 	padding: 104px 0 97px 0;
 	margin-top:58px;
@@ -1783,13 +1783,13 @@ ul.blog-meta {
 /*  23.  Subscribe Area
 /*----------------------------------------*/
 .subscribe-area {
-	background-image:url("assets/images/bg/subscribe.jpg");
+	background-image:url("bg/subscribe.jpg");
 	background-size:cover;
 	background-repeat:no-repeat;
 	padding:73px 0 80px 0;
 }
 .subscribe-area.bg-2 {
-	background-image:url("assets/images/bg/subscribe-2.jpg");
+	background-image:url("bg/subscribe-2.jpg");
 	background-size:cover;
 }
 .subscribe-form {
@@ -2968,7 +2968,7 @@ a.value-decrease::before {
 	height:100vh;
 }
 .page-404-area.bg-1 {
-	background: rgba(0, 0, 0, 0) url("assets/images/404.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("404.jpg") repeat scroll center center / cover ;
 }
 .page-404-msg {
 	text-align:center;
@@ -2988,7 +2988,7 @@ a.value-decrease::before {
 /*  40. Coming Page 
 /*----------------------------------------*/
 .coming-soon-area {
-	background: rgba(0, 0, 0, 0) url("assets/images/bg/coming-soon.jpg") repeat scroll center center / cover ;
+	background: rgba(0, 0, 0, 0) url("bg/coming-soon.jpg") repeat scroll center center / cover ;
 	padding:0 0 0 0;
 }
 .coming-soon-msg h2 {

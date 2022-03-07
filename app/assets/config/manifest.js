@@ -5,7 +5,7 @@
 
 
 //= link assets/css/bootstrap.min.css
-//= link assets/css/font-awesome.min.css
+//= link assets/css/font-awesome.css
 //= link assets/css/themify-icons.css
 //= link assets/css/elegant.css
 //= link assets/css/meanmenu.min.css
