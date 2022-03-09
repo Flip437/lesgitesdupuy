@@ -4,6 +4,12 @@
 
 
 
+// ajouter JS dans l'ordre
+
+
+
+
+
 //= link assets/css/bootstrap.min.css
 //= link assets/css/font-awesome.css
 //= link assets/css/themify-icons.css
