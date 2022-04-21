@@ -13,6 +13,7 @@ class Admin::CottagesController < ApplicationController
   # GET /admin/cottages/new
   def new
     @admin_cottage = Admin::Cottage.new
+    @admin_cottage.bedrooms.build
   end
 
   # GET /admin/cottages/1/edit
@@ -65,6 +66,12 @@ class Admin::CottagesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def admin_cottage_params
-      params.fetch(:admin_cottage, {}).permit(:name)
+      params.require(:admin_cottage).permit(
+        :name,
+        bedrooms_attributes: [
+          :id,
+          :name,
+          :_destroy]
+      )
     end
 end

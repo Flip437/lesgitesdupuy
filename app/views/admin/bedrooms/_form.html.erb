@@ -1,0 +1,19 @@
+<%= form_with(model: admin_bedroom) do |form| %>
+  <% if admin_bedroom.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(admin_bedroom.errors.count, "error") %> prohibited this admin_bedroom from being saved:</h2>
+
+      <ul>
+        <% admin_bedroom.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.select :cottage_id, @admin_cottages.map{ |cottage| [cottage.name, cottage.id] } %>
+    <%= form.text_field :name %>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start date:</strong>
+  <span style=<%=start_date_color(@admin_reservation.end_date)%>><%= @admin_reservation.start_date %></span>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <span><%= @admin_reservation.end_date %></span>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @admin_reservation.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @admin_reservation.lastname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @admin_reservation.email %>
+</p>
+
+<%= link_to 'Edit', edit_admin_reservation_path(@admin_reservation) %> |
+<%= link_to 'Back', admin_reservations_path %>

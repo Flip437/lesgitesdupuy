@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Admin Bedrooms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_bedrooms.each do |admin_bedroom| %>
+      <tr>
+        <td><%= admin_bedroom.name %></td>
+        <td><%= link_to 'Show', admin_bedroom %></td>
+        <td><%= link_to 'Edit', edit_admin_bedroom_path(admin_bedroom) %></td>
+        <td><%= link_to 'Destroy', admin_bedroom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Admin Bedroom', new_admin_bedroom_path %>

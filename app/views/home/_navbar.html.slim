@@ -1,0 +1,169 @@
+header.header-area
+  /! header-top
+  .header-top.d-none.d-sm-block
+    .container
+      .row.align-items-center
+        .col-sm-9
+          .contact-info
+            ul
+              li
+                i.fa.fa-phone
+                | (88) 0111 223 445
+                span \
+              li
+                i.fa.fa-home
+                | 20 Green Farm, New Zealand
+                span \
+              li
+                i.fa.fa-time
+                | Monday - Saturday: 7.AM - 5.PM
+        .col-sm-3
+          .social-icons.pull-right
+            a href="#" 
+              i.fa.fa-facebook
+            a href="#" 
+              i.fa.fa-twitter
+            a href="#" 
+              i.fa.fa-instagram
+            a href="#" 
+              i.fa.fa-youtube
+            a href="#" 
+              i.fa.fa-skype
+  /! header-bottom
+  #sticker.header-bottom
+    .container
+      .row.align-items-center
+        .col-sm-2
+          .logo
+            a href="index.html" = image_tag "logo.png", alt:"logo"
+        .col-sm-8
+          .mainmenu.text-center
+            nav
+              ul
+                li
+                  a href="index.html"  Home
+                  ul.submenu
+                    li
+                      a href="index.html"  Home Version 1
+                    li
+                      a href="index-2.html"  Home Version 2
+                    li
+                      a href="index-3.html"  Home Version 3
+                    li
+                      a href="index-4.html"  Home Version 4
+                    li
+                      a href="index-5.html"  Home Version 5
+                li
+                  a href="#"  Pages
+                  ul.submenu
+                    li
+                      a href="about.html"  About Us
+                    li
+                      a href="coming-soon.html"  Coming Soon
+                    li
+                      a href="404.html"  Error 404
+                li
+                  a href="#"  Services
+                  ul.submenu
+                    li
+                      a href="service-1.html"  Service 1
+                    li
+                      a href="service-2.html"  Service 2
+                    li
+                      a href="service-3.html"  Service 3
+                li
+                  a href="#"  Gallery
+                  ul.submenu
+                    li
+                      a href="gallery.html"  Gallery
+                    li
+                      a href="gallery-details.html"  Gallery Details
+                li
+                  a href="#"  Blog
+                  ul.submenu
+                    li
+                      a href="blog-1.html"  Blog One
+                    li
+                      a href="blog-2.html"  Blog Two
+                    li
+                      a href="blog-3.html"  Blog Three
+                    li
+                      a href="blog-4.html"  Blog Four
+                    li
+                      a href="blog-details.html"  Blog Details
+                li
+                  a href="#"  Shop
+                  ul.mega-menu
+                    li.megamenu-single
+                      span.mega-menu-title Shop Page
+                      ul
+                        li
+                          a href="shop.html"  Shop Sidebar
+                        li
+                          a href="shop-full-width.html"  Shop Fullwidth
+                        li
+                          a href="shop-filter.html"  Shop Filter
+                        li
+                          a href="product-details.html"  Product Details
+                    li.megamenu-single
+                      span.mega-menu-title Featured
+                      ul
+                        li
+                          a href="shopping-cart.html"  Shopping Cart
+                        li
+                          a href="checkout.html"  Check Out
+                        li
+                          a href="order-complete.html"  Complete
+                    li.megamenu-single
+                      = image_tag "cart/1.jpg", alt:""
+                li
+                  a href="contact.html"  Contact Us
+        .col-sm-2
+          .search-and-cart
+            /! search-box
+            .search.search-box
+              i.fa.fa-search.searching-icon
+              .search-place
+                input placeholder="Search" type="text" /
+            /! shopping-cart
+            .cart-link
+              a href="javascript:void(0);" 
+                i.fa.fa-shopping-cart
+                span 2
+              ul.list-none.cart-dropdown
+                li
+                  .mini-cart-thumb
+                    a href="#" = image_tag "cart/1.jpg", alt:""
+                  .mini-cart-heading
+                    h5
+                      a href="#"  Aloe vera - herbal
+                    span 2 x $140.00
+                  .mini-cart-remove
+                    button
+                      i.fa.fa-trash-o aria-hidden="true" 
+                li
+                  .mini-cart-thumb
+                    a href="#" = image_tag "cart/2.jpg", alt:""
+                  .mini-cart-heading
+                    h5
+                      a href="#"  Haworthia Wide Zebra
+                    span 1 x $100.00
+                  .mini-cart-remove
+                    button
+                      i.fa.fa-trash-o aria-hidden="true" 
+                li
+                  .mini-cart-thumb
+                    a href="#" = image_tag "cart/3.jpg", alt:""
+                  .mini-cart-heading
+                    h5
+                      a href="#"  Echeveria Succulent
+                    span 1 x $100.00
+                  .mini-cart-remove
+                    button
+                      i.fa.fa-trash-o aria-hidden="true" 
+                li
+                  .mini-cart-total
+                    h5 Total: $280.00
+                  .mini-cart-checkout
+                    a href="checkout.html"  Checkout
+/! header-area end

@@ -12,4 +12,21 @@
  *
  *= require_tree .
  *= require_self
+
+
+ *= require assets/css/bootstrap.min.css
+ *= require assets/css/font-awesome.css
+ *= require assets/css/themify-icons.css
+ *= require assets/css/elegant.css
+ *= require assets/css/meanmenu.min.css
+ *= require assets/css/animate.css
+ *= require assets/css/venobox.css
+ *= require assets/css/jquery-ui.min.css
+ *= require assets/css/slick.css
+ *= require assets/css/slick-theme.css
+ *= require assets/css/helper.css
+ *= require style.css
+ *= require assets/css/responsive.css
+
+
  */
