@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'gallery/index'
   namespace :admin do
     resources :reservations do
 
