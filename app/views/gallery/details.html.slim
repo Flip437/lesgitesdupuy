@@ -1,0 +1,74 @@
+/! page-banner-area start
+.page-banner-area.bg-5
+  .container
+    .row.align-items-center.height-400
+      .col-lg-12
+        .page-banner-text.text-center.text-white
+          h2 Gallery
+          ul.site-breadcrumb
+            li
+              =link_to "Home", root_path
+              span
+            li
+							=link_to "Gallery Details", gallery_details_path
+/! page-banner-area end
+
+/! gallery-details start
+.gallery-details-area.mt-95.sm-mt-70
+  .container
+    .row
+      .col-lg-12
+        .project-gallery-details
+          h4 John Wick ‘s Garden
+          p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+          .slider.slider-for.mt-15.sm-mt-45
+            div
+            	= image_tag "projects/gallery-details/1.jpg", alt:""
+            div
+            	= image_tag "projects/gallery-details/2.jpg", alt:""
+            div
+            	= image_tag "projects/gallery-details/3.jpg", alt:""
+          .slider.slider-nav.mt-15
+            .single-nav
+            	= image_tag "projects/gallery-details/1.jpg", alt:""
+            .single-nav
+            	= image_tag "projects/gallery-details/2.jpg", alt:""
+            .single-nav
+            	= image_tag "projects/gallery-details/3.jpg", alt:""
+    .row.mt-25
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-user
+            | Client
+          p John Wick
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-map-marker
+            | Location
+          p 20 Green Farm, New Zealand
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-tag
+            | Categories
+          p Redesign , Garden House , Deco
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-calendar
+            | Date
+          p June 06, 2017
+/! gallery-details end
+/! subscribe-area start
+.subscribe-area.mt-70.sm-mt-50
+  .container
+    .row
+      .col-lg-6.offset-lg-3
+        .subscribe-form
+          h3 Subscribe To Our Newletter
+          p We will send you the monthly Newsletter
+          input placeholder=("Your Email") type="email" /
+          button.btn-common Subscribe
+/! subscribe-area end
