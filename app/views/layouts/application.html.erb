@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta
+    <% _slim_codeattributes1 = ("text/html; charset=UTF-8")
+       if _slim_codeattributes1
+         if _slim_codeattributes1 == true %> content=""
+    <% else %> content="<%= _slim_codeattributes1 %>"
+    <% end
+       end %> http-equiv="Content-Type"/>
+  <title>Gitesdupuy</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<%= render 'home/navbar' %>
+<%= yield %>
+<%= render 'home/footer' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</body>
+</html>
