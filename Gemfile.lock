@@ -189,9 +189,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
-    slim (4.1.0)
-      temple (>= 0.7.6, < 0.9)
-      tilt (>= 2.0.6, < 2.1)
     spring (4.0.0)
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
@@ -250,7 +247,6 @@ DEPENDENCIES
   rspec-rails (~> 3.4, >= 3.4.2)
   sass-rails (>= 6)
   selenium-webdriver
-  slim (~> 4.1)
   spring
   table_print (~> 1.5, >= 1.5.6)
   turbolinks (~> 5)
