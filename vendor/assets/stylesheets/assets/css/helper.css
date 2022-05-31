@@ -178,6 +178,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 .mt-130 {margin-top:130px;}
 .mt-170 {margin-top:170px;}
 .mt-200 {margin-top:200px;}
+.mt-15vh {margin-top:15vh;}
 
 .mb-60 {margin-bottom:60px;}
 .mb-45 {margin-bottom:45px;}
@@ -200,6 +201,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 .mb-minus-20 {margin-bottom:-20px;}
 .mt-minus-25 {margin-top:-25px;}
 .mt-minus-58 {margin-top:-58px;}
+.mt-minus-60vh {margin-top:-60vh;}
 
 /* Tablet :768px. */
 @media (max-width: 991px) {
@@ -327,3 +329,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 .pull-left {float:left;}
 .pull-right {float:right;}
+
+a.text-dark {
+  color:#111111 !important;
+}

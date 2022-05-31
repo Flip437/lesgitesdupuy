@@ -16,8 +16,8 @@ Rails.application.routes.draw do
   #   resources :cottages
   #   end
   # root "admin/cottages#index"
-  get "public/gallery/index"
-  get "public/gallery/details"
+  get "public/gallery/grand_gite"
+  get "public/gallery/petit_gite"
   root "public/home#index"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

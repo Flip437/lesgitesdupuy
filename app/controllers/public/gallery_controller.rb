@@ -1,7 +1,7 @@
 class Public::GalleryController < ApplicationController
-  def index
+  def grand_gite
   end
 
-  def details
+  def petit_gite
   end
 end
