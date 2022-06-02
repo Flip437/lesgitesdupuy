@@ -333,3 +333,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 a.text-dark {
   color:#111111 !important;
 }
+
+.shadow-sm {
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
