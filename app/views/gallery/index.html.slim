@@ -4,12 +4,12 @@
     .row.align-items-center.height-400
       .col-lg-12
         .page-banner-text.text-center.text-white
-          h2 Gallery
+          h2 Galerie
           ul.site-breadcrumb
             li
               =link_to "Home", root_path
               span 
-            li Gallery
+            li Galerie
 /! page-banner-area end
 
 /! project-area start
@@ -24,8 +24,8 @@
         .project-nav
           ul
             li.active data-filter="*"  Tous les gîtes
-            li data-filter=".gite_1"  Gîte 1
-            li data-filter=".gite_2"  Gîte 2
+            li data-filter=".gite_1"  Le Petit Gîte
+            li data-filter=".gite_2"  Le Grand Gîte
             li data-filter=".planting"  Planting
             li data-filter=".landscape"  Landscape
     .row.mt-35.project-items
@@ -80,15 +80,6 @@
             = image_tag "projects/gallery/1_6.jpg", alt:""
           .project-desc
             a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/1_6.jpg")}" 
-              i.fa.fa-expand
-            h4
-              a href="gallery-details.html"  Flowerscaping
-      .col-lg-3.col-md-6.col-sm-12.gite_1
-        .single-project.mb-30
-          .project-thumb
-            = image_tag "projects/gallery/1_7.jpg", alt:""
-          .project-desc
-            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/1_7.jpg")}" 
               i.fa.fa-expand
             h4
               a href="gallery-details.html"  Flowerscaping
