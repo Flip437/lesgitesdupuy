@@ -3203,7 +3203,7 @@ a.value-decrease::before {
 .work-hours ul li {
 	line-height:36px;
 }
-.work-hours ul li:last-child {
+.work-hours ul li.work-close {
 	color:#c2c2c2;
 }
 .work-hours ul li span {
