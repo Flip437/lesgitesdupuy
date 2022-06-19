@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   # root "admin/cottages#index"
   get "gallery/index"
   get "gallery/details"
+  get "contact/index"
   root "home#index"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.htmlz
 end
