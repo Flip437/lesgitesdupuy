@@ -59,7 +59,7 @@ ul.inline-list li {
 	position:relative;
 }
 .overlay:before {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   content: "";
   height: 100%;
   left: 0;
