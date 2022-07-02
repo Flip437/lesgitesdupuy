@@ -1,0 +1,69 @@
+/! page-banner-area start
+.page-banner-area.bg-landscape.overlay
+  .container
+    .row.align-items-center.height-400
+      .col-lg-12
+        .page-banner-text.text-center.text-white
+          h2 Galerie
+          ul.site-breadcrumb
+            li
+              = link_to "Accueil", root_path
+              span >
+            li
+              = link_to "Le Grand Gîte", gallery_grand_gite_path
+/! page-banner-area end
+
+/! gallery-details start
+.gallery-details-area.mt-95.sm-mt-70
+  .container
+    .row
+      .col-lg-12
+        .project-gallery-details
+          h4 Le Grand Gîte
+          p Le Grand Gîte est super, bla bla bla...
+          .slider.slider-for.mt-15.sm-mt-45
+            div
+              = image_tag "projects/gallery/grand_gite/1.jpg", alt: ""
+            div
+              = image_tag "projects/gallery/grand_gite/2.jpg", alt: ""
+            div
+              = image_tag "projects/gallery/grand_gite/3.jpg", alt: ""
+            div
+              = image_tag "projects/gallery/grand_gite/4.jpg", alt: ""
+          .slider.slider-nav.mt-15
+            .single-nav
+              = image_tag "projects/gallery/grand_gite/1.jpg", alt: ""
+            .single-nav
+              = image_tag "projects/gallery/grand_gite/2.jpg", alt: ""
+            .single-nav
+              = image_tag "projects/gallery/grand_gite/3.jpg", alt: ""
+            .single-nav
+              = image_tag "projects/gallery/grand_gite/4.jpg", alt: ""
+    .row.mt-25
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-users
+            | 6-8 Personnes
+          p details ?
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-home
+            | 3 Chambres
+          p details ?
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-bed
+            | X Lits
+          p details ?
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-tag
+            | Features ??
+          p details ?
+/! gallery-details end
+
+= render "contact-phone"

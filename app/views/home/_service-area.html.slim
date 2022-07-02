@@ -7,13 +7,13 @@
           = image_tag "projects/gallery/petit_gite/1.jpg", alt:"promo"
           h3 Le Petit Gîte
           p Petit accroche sur le petit gîte
-          a.readmore href="#" En savoir plus
+          = link_to "En savoir plus", gallery_petit_gite_path, class:"readmore"
       .col-lg-6.col-md-6.col-sm-12
         .sin-service
           = image_tag "projects/gallery/grand_gite/1.jpg", alt:"promo"
           h3 Le Grand Gîte
           p Petit accroche sur le grand gîte
-          a.readmore href="#" En savoir plus
+          = link_to "En savoir plus", gallery_grand_gite_path, class:"readmore"
       / .col-lg-4.col-md-6.col-sm-12.d-lg-block.d-md-none
         .sin-service
           = image_tag "promo/3.jpg", alt:"promo"
