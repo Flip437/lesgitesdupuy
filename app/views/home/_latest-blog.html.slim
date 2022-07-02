@@ -9,19 +9,19 @@
       .col-lg-6.col-md-6.col-sm-12
         .single-blog
           .blog-thumb
-            a href="blog-details.html" = image_tag "projects/gallery/petit_gite/1.jpg", alt:"blog-image"
+            = image_tag "projects/gallery/petit_gite/1.jpg", alt:""
           .blog-desc
             h3
-              a href="blog-details.html" Le Petit Gîte
+              = link_to "Le Petit Gîte", gallery_petit_gite_path
             p Le Petit Gîte est super, bla bla bla...
-            a.readmore href="blog-details.html" En savoir plus
+            = link_to "En savoir plus", gallery_petit_gite_path, class: "readmore"
       .col-lg-6.col-md-6.col-sm-12
         .single-blog
           .blog-thumb
-            a href="blog-details.html" = image_tag "projects/gallery/grand_gite/1.jpg", alt:"blog-image"
+            = image_tag "projects/gallery/grand_gite/1.jpg", alt:""
           .blog-desc
             h3
-              a href="blog-details.html" La Grand Gîte
+              = link_to "Le Grand Gîte", gallery_grand_gite_path
             p Le Grand Gîte est super, bla bla bla...
-            a.readmore href="blog-details.html" En savoir plus
+            = link_to "En savoir plus", gallery_grand_gite_path, class: "readmore"
 /! blog-area end
