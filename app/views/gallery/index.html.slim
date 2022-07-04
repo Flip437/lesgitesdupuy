@@ -24,76 +24,136 @@
       .col-lg-12
         .project-nav
           ul
-            li.active data-filter="*"  Toutes les photos
-            li data-filter=".gite_1"  Le Petit Gîte
-            li data-filter=".gite_2"  Le Grand Gîte
-            li data-filter=".planting"  Planting
-            li data-filter=".landscape"  Landscape
+            li.active data-filter="*" Toutes les photos
+            li data-filter=".petit_gite" Le Petit Gîte
+            li data-filter=".grand_gite" Le Grand Gîte
+            li data-filter=".landscape" Environnement
     .row.mt-35.project-items
-      .col-lg-3.col-md-6.col-sm-12.gite_1
+      /1
+      .col-lg-3.col-md-6.col-sm-12.landscape
         .single-project.mb-30
           .project-thumb
-            = image_tag "projects/gallery/grand_gite/4.jpg", alt:""
+            = image_tag "projects/gallery/environnement/1.jpg", alt:""
           .project-desc
-            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/grand_gite/4.jpg")}"
+            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/environnement/1.jpg")}"
               i.ti-fullscreen
+            .my-3
             h4
-              a href="gallery-details.html"  Flowerscaping
-      .col-lg-3.col-md-6.col-sm-12.gite_2
+              a href="gallery-details.html" Détails
+      .col-lg-3.col-md-6.col-sm-12.petit_gite
         .single-project.mb-30
           .project-thumb
-            = image_tag "projects/gallery/grand_gite/2.jpg", alt:""
+            = image_tag "projects/gallery/petit_gite/1.jpg", alt:""
           .project-desc
-            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/grand_gite/2.jpg")}"
+            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/petit_gite/1.jpg")}"
               i.ti-fullscreen
+            .my-3
             h4
-              a href="gallery-details.html"  Flowerscaping
-      .col-lg-3.col-md-6.col-sm-12.planting
+              a href="gallery-details.html" Détails
+      .col-lg-3.col-md-6.col-sm-12.grand_gite
         .single-project.mb-30
           .project-thumb
             = image_tag "projects/gallery/grand_gite/1.jpg", alt:""
           .project-desc
             a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/grand_gite/1.jpg")}"
               i.ti-fullscreen
+            .my-3
             h4
-              a href="gallery-details.html"  Flowerscaping
+              a href="gallery-details.html" Détails
+      /2
       .col-lg-3.col-md-6.col-sm-12.landscape
         .single-project.mb-30
           .project-thumb
-            = image_tag "projects/gallery/grand_gite/3.jpg", alt:""
-          .project-desc
-            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/grand_gite/3.jpg")}"
-              i.ti-fullscreen
-            h4
-              a href="gallery-details.html"  Flowerscaping
-      .col-lg-3.col-md-6.col-sm-12.gite_1
-        .single-project.mb-30
-          .project-thumb
-            = image_tag "projects/gallery/environnement/2.jpg", alt:""
+            = image_tag "projects/gallery/environnement/2.jpg", alt: ""
           .project-desc
             a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/environnement/2.jpg")}"
               i.ti-fullscreen
+            .my-3
             h4
-              a href="gallery-details.html"  Flowerscaping
-      .col-lg-3.col-md-6.col-sm-12.gite_2
+              a href="gallery-details.html" Détails
+      .col-lg-3.col-md-6.col-sm-12.petit_gite
         .single-project.mb-30
           .project-thumb
-            = image_tag "projects/gallery/environnement/5.jpg", alt:""
+            = image_tag "projects/gallery/petit_gite/2.jpg", alt: ""
+          .project-desc
+            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/petit_gite/2.jpg")}"
+              i.ti-fullscreen
+            .my-3
+            h4
+              a href="gallery-details.html" Détails
+      .col-lg-3.col-md-6.col-sm-12.grand_gite
+        .single-project.mb-30
+          .project-thumb
+            = image_tag "projects/gallery/grand_gite/2.jpg", alt: ""
+          .project-desc
+            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/grand_gite/2.jpg")}"
+              i.ti-fullscreen
+            .my-3
+            h4
+              a href="gallery-details.html" Détails
+      /3
+      .col-lg-3.col-md-6.col-sm-12.landscape
+        .single-project.mb-30
+          .project-thumb
+            = image_tag "projects/gallery/environnement/5.jpg", alt: ""
           .project-desc
             a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/environnement/5.jpg")}"
               i.ti-fullscreen
+            .my-3
             h4
-              a href="gallery-details.html"  Flowerscaping
+              a href="gallery-details.html" Détails
+      .col-lg-3.col-md-6.col-sm-12.petit_gite
+        .single-project.mb-30
+          .project-thumb
+            = image_tag "projects/gallery/petit_gite/3.jpg", alt: ""
+          .project-desc
+            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/petit_gite/3.jpg")}"
+              i.ti-fullscreen
+            .my-3
+            h4
+              a href="gallery-details.html" Détails
+      .col-lg-3.col-md-6.col-sm-12.grand_gite
+        .single-project.mb-30
+          .project-thumb
+            = image_tag "projects/gallery/grand_gite/3.jpg", alt: ""
+          .project-desc
+            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/grand_gite/3.jpg")}"
+              i.ti-fullscreen
+            .my-3
+            h4
+              a href="gallery-details.html" Détails
+      /4
+      .col-lg-3.col-md-6.col-sm-12.landscape
+        .single-project.mb-30
+          .project-thumb
+            = image_tag "projects/gallery/environnement/4.jpg", alt: ""
+          .project-desc
+            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/environnement/4.jpg")}"
+              i.ti-fullscreen
+            .my-3
+            h4
+              a href="gallery-details.html" Détails
+      .col-lg-3.col-md-6.col-sm-12.petit_gite
+        .single-project.mb-30
+          .project-thumb
+            = image_tag "projects/gallery/petit_gite/4.jpg", alt: ""
+          .project-desc
+            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/petit_gite/4.jpg")}"
+              i.ti-fullscreen
+            .my-3
+            h4
+              a href="gallery-details.html" Détails
+      .col-lg-3.col-md-6.col-sm-12.grand_gite
+        .single-project.mb-30
+          .project-thumb
+            = image_tag "projects/gallery/grand_gite/4.jpg", alt: ""
+          .project-desc
+            a.venobox data-gall="projectGallery" href="#{asset_path("projects/gallery/grand_gite/4.jpg")}"
+              i.ti-fullscreen
+            .my-3
+            h4
+              a href="gallery-details.html" Détails
 
 /! project-area end
-/! subscribe-area start
-.subscribe-area.mt-70.sm-mt-50
-  .container
-    .row
-      .col-lg-6.offset-lg-3
-        .subscribe-form
-          h3 Subscribe To Our Newletter
-          p We will send you the monthly Newsletter
-          input placeholder=("Your Email") type="email" /
-          button.btn-common Subscribe
-/! subscribe-area end
+
+= render "contact-phone"
