@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get "gallery/index"
   get "gallery/petit_gite"
   get "gallery/grand_gite"
+  get "gallery/environnement"
   get "contact/index"
   root "home#index"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.htmlz

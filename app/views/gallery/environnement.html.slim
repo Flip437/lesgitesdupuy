@@ -1,0 +1,69 @@
+/! page-banner-area start
+.page-banner-area.bg-landscape.overlay
+  .container
+    .row.align-items-center.height-400
+      .col-lg-12
+        .page-banner-text.text-center.text-white
+          h2 Galerie
+          ul.site-breadcrumb
+            li
+              = link_to "Accueil", root_path
+              span >
+            li
+              = link_to "Environnement", gallery_environnement_path
+/! page-banner-area end
+
+/! gallery-details start
+.gallery-details-area.mt-95.sm-mt-70
+  .container
+    .row
+      .col-lg-12
+        .project-gallery-details
+          h4 Environnement
+          p Les environs sont super, bla bla bla...
+          .slider.slider-for.mt-15.sm-mt-45
+            div
+              = image_tag "projects/gallery/environnement/1.jpg", alt: ""
+            div
+              = image_tag "projects/gallery/environnement/2.jpg", alt: ""
+            div
+              = image_tag "projects/gallery/environnement/4.jpg", alt: ""
+            div
+              = image_tag "projects/gallery/environnement/5.jpg", alt: ""
+          .slider.slider-nav.mt-15
+            .single-nav
+              = image_tag "projects/gallery/environnement/1.jpg", alt: ""
+            .single-nav
+              = image_tag "projects/gallery/environnement/2.jpg", alt: ""
+            .single-nav
+              = image_tag "projects/gallery/environnement/4.jpg", alt: ""
+            .single-nav
+              = image_tag "projects/gallery/environnement/5.jpg", alt: ""
+    .row.mt-25
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-users
+            | ??
+          p details ?
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-home
+            | ??
+          p details ?
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-bed
+            | ??
+          p details ?
+      .col-lg-3.col-md-6.col-sm-12
+        .project-info
+          h5
+            i.fa.fa-tag
+            | ??
+          p details ?
+/! gallery-details end
+
+= render "contact-phone"
