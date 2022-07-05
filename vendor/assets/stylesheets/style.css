@@ -3219,3 +3219,7 @@ a.value-decrease::before {
 	font-size:14px;
 	color:#c2c2c2;
 }
+
+.text-normal {
+  color: #636363;
+}

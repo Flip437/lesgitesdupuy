@@ -8,11 +8,11 @@ header.header-area
             ul
               li
                 i.fa.fa-phone
-                | 06 99 99 99 99
+                = link_to "06 99 99 99 99", contact_index_path + "#contact-us", class: "text-normal"
                 span \
               li
                 i.fa.fa-home
-                | Les Gîtes du Puy, 24300 Nontron, France
+                = link_to "Les Gîtes du Puy, 24300 Nontron, France", contact_index_path + "#google-map", class: "text-normal"
                 span \
               li
                 i.fa.fa-time
